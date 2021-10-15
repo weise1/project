@@ -1,9 +1,7 @@
 "use strict";
 
-const isCheked = true,
-    isClosed = false;
-
-console.log(isCheked && isClosed);
+alert('he');
+console.log(10 + 10);
 
 
 
