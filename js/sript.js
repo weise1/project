@@ -1,8 +1,8 @@
-"use strict";
+// "use strict";
 
-let number0films = +prompt("Сколько фильмов вы уже посмотрели?");
+// let number0films = +prompt("Сколько фильмов вы уже посмотрели?");
 
-console.log(number0films);
+// console.log(number0films);
 
 // let qes1 = prompt("Один из последних просмотренных фильмов?:"),
 //     qes2 = +prompt("На сколько оцените его?:"),
@@ -34,11 +34,13 @@ console.log(number0films);
 
 for (let i = 0; i <= 10; i++) {
     const ques1 = prompt("Какой ваш фильм(больше 50 символов нельзя):");
-    if (ques1 == 0) {
+    if (ques1 != null && ques1 != ' ' && ques1 != '' && ques1.length < 10 ) {
+        console.log("ЗАебись");
         break;
     }
-    else if (ques1.length <= 10) {
-        console.log("ЗАебись");
+    else if (ques1.length >= 10) {
+        console.log("eror");
+        i--;    
     }
     else {
         if (i == 10) {
