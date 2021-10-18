@@ -1,31 +1,28 @@
 "use strict";
 
-let number0films = +prompt("Сколько фильмов вы уже посмотрели?");
+let num = 50;
 
-console.log(number0films);
-
-
-let qes1 = prompt("Один из последних просмотренных фильмов?:"),
-    qes2 = +prompt("На сколько оцените его?:"),
-    qes3 = prompt("Один из последних просмотренных фильмов?:"),
-    qes4 = +prompt("На сколько оцените его?:");
+// while (num <= 55) {
+//     console.log(num);
+//     num++;
+// }
 
 
+// do {
+//     console.log(num);
+//     num++;
+// }
+// while (num <= 55);
+
+for (let i = 1; i <= 10; i++) {
+    if (i === 7) {
+        continue;
+    }
+    console.log(i);
+}
 
 
-const personalMuvieDB = {
 
-    count: number0films,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
-
-personalMuvieDB.movies[qes1] = qes2;
-personalMuvieDB.movies[qes3] = qes4;
-
-console.log(personalMuvieDB);
 
 
 
