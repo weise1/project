@@ -21,5 +21,5 @@ function learnJS(lang, callback) {
 }
 
 learnJS('JavaScript', function () {
-   console.log("Я прошел этот урок"); 
+   console.log("Я прошел "); 
 });
